@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <!-- Copiamos link css de boostrap-->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+                  rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+                  crossorigin="anonymous">
+            <title> Landing Page - Smartwatch</title>
+        </head>
+        <body>
+            
+                                       <!-- Detalle de las clases utilizadas  -->
+            <!-- 
+                    navbar: Aplica el estilo básico de una barra de navegación (navbar) según Bootstrap.
+
+                    navbar-expand-lg: Hace que la barra de navegación sea expansible a partir del tamaño 
+                                      de pantalla "large" (grande). Esto significa que en pantallas grandes 
+                                      la barra de navegación se mostrará de forma horizontal, pero en pantallas 
+                                      más pequeñas, se colapsará en un menú desplegable.
+
+                    mt-4: Aplica un margen superior de 4 unidades, creando un espacio adicional encima de la barra
+                          de navegación.
+
+                    container: -- aplica margenes a los lados (izquierda y derecha) 
+                    
+                    navbar-brand: Es una clase de Bootstrap que se usa para estilizar un enlace o un elemento de marca 
+                                  en una barra de navegación. Normalmente, se usa para mostrar el nombre o el logo de 
+                                  la marca en la barra de navegación y suele tener un estilo específico, como un tamaño 
+                                  de fuente o un espaciado particular.
+
+                    fs-3: Es una clase de Bootstrap para establecer el tamaño de la fuente. fs-3 aplica un tamaño de 
+                          fuente que es mayor que el tamaño base, pero no tan grande como otros tamaños más grandes. 
+                          Bootstrap utiliza un sistema de clases fs-* para diferentes tamaños de fuente, con fs-1 siendo 
+                          el más grande y fs-6 el más pequeño.
+                    
+                    navbar-toggler: Es una clase de Bootstrap que estiliza el botón que se utiliza para alternar el menú 
+                                    colapsable en la barra de navegación. Generalmente, este botón se muestra como un icono 
+                                    de hamburguesa (tres líneas horizontales) en dispositivos móviles o pantallas más pequeñas.
+
+                    type="button": Establece que el botón es de tipo "button", lo que evita que el botón envíe un formulario cuando 
+                                   se hace clic en él.
+
+                    data-bs-toggle="collapse": Es un atributo de datos que indica que el botón debe alternar (mostrar u ocultar) un 
+                                               elemento que está colapsado. En este caso, el comportamiento se activa al hacer clic 
+                                               en el botón.
+
+                    data-bs-target="#navbarNavDropdown": Especifica el selector del elemento que debe ser colapsado o expandido cuando 
+                                                         se hace clic en el botón. El valor #navbarNavDropdown es el ID del elemento que 
+                                                         se mostrará u ocultará.      
+                                                         
+                    navbar-nav: Es una clase de Bootstrap que aplica estilos específicos a una lista desordenada (<ul>) para que se comporte 
+                                como un contenedor de elementos de navegación dentro de una barra de navegación (navbar). Esta clase proporciona 
+                                un estilo consistente para los elementos de la lista que actúan como enlaces de navegación.
+
+                    ms-auto: Es una clase de Bootstrap para alinear elementos en el contenedor. ms se refiere a "margen a la izquierda" 
+                             (margin-start en inglés) en un diseño de escritura de izquierda a derecha. auto aplica un margen automático, 
+                             empujando los elementos hacia el lado derecho del contenedor (en el caso de un diseño de izquierda a derecha).
+                             
+                    
+                    nav-link en Bootstrap se usa para estilizar los enlaces dentro de una barra de navegación (navbar)
+                    
+                    
+                    header: La clase header puede estar asociada a estilos personalizados definidos en tu CSS, pero no 
+                            es una clase estándar de Bootstrap.
+
+                    pt-7: Es una clase de Bootstrap que agrega un padding (espacio interno) superior de 7 unidades. El 
+                          número de unidades corresponde a un tamaño específico definido por Bootstrap (usualmente en rems o píxeles).
+                          
+                    container-xl: Es una clase de Bootstrap que define un contenedor con un ancho máximo específico para pantallas extra 
+                                  grandes (XL). Los contenedores en Bootstrap tienen un ancho fijo en diferentes puntos de interrupción 
+                                  (breakpoints), proporcionando un espaciado automático y centrado del contenido. container-xl hace que 
+                                  el ancho máximo del contenedor sea más amplio en pantallas grandes.     
+                                  
+                    row: Es una clase de Bootstrap que se utiliza para crear una fila en el sistema de rejilla (grid). Agrupa las columnas 
+                         dentro de la fila para organizar el contenido en una disposición de rejilla. Asegura que las columnas dentro de esta 
+                         fila se alineen y distribuyan adecuadamente.
+                         
+                    col-md-6: Es una clase de Bootstrap que define una columna en el sistema de rejilla. col-md-6 indica que esta columna ocupará 
+                              6 de las 12 partes disponibles en el sistema de rejilla en pantallas medianas (md) y más grandes. Esto significa que 
+                              cada columna tomará la mitad del ancho disponible en pantallas medianas o más grandes. En pantallas más pequeñas, la
+                              columna ocupará todo el ancho disponible, a menos que se especifiquen otras clases para esos tamaños. -->
+
+            
+
+
+<!----------------------------------------------------------------NAVEGACION --------------------------------------------------------------------->
+             <div class="navbar navbar-expand-lg mt-4"> 
+                <div class="container"> 
+                    <a href="#" class="navbar-brand fs-3">Gadget</a>  <!-- enlace para el logo que está a la izquierda-->
+
+                    <button class="navbar-toggler" 
+                            type="button" 
+                            data-bs-toggle="collapse" 
+                            data-bs-tarjet="#navbarNavDropdown">
+                            <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- para la barra de navegacion de la derecha-->
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ms-auto">
+                             <li class="nav-item">
+                                <a href="#" class="nav-link">Product</a>
+                             </li>
+
+                             <li class="nav-item">
+                                <a href="#" class="nav-link">Product</a>
+                             </li>
+                        </ul>
+                    </div>
+                </div>
+             </div>
+
+<!-------------------------------------------------------------- HEADER --------------------------------------------------------->
+
+        <header class="header pt-7">
+            <div class="container-xl">
+                <div class="row"> <!-- creamos la fila que tendra dos columnas de 6 espacios cada una-->
+
+                    <!-- esta columna para la imagen del smartwatch-->
+                    <div class="col-md-6">
+                        <div class="image-container mb-5 px-4 "> <!-- esta no es de boostrap es solo identificador-->
+                            <img src="/showcase.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+
+                    <!-- esta columna para el texto e información-->
+                    <div class="col-md-6">
+                        <div class="text-container p-4 d-flex flex-column justify-content-center h-100 mb-5"> <!-- esta no es de boostrap es solo identificador-->
+                            <h1> Featuring The New Watch of Tomorrow</h1>
+                            <p class="lead text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing 
+                               elit. Assumenda sapiente optio quas dolor odio sit 
+                               fugiat officiis eligendi non, fuga doloremque vel 
+                               deleniti commodi obcaecati!
+                            </p>
+                            <button class="btn btn-outline-secondary text-uppercase">Know More</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </header>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+
+<!------------------------------------------------------- Testimonial-------------------------------------------------------------------->
+
+        <section class="testimonial bg-light text-secondary p-5">
+            <div class="container">
+                <p class="display-5 text-center">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, 
+                    reiciendis neque voluptates quaerat accusantium corporis.
+                </p>
+
+                <p class="text-center lead pt-2"> Testimonials</p>
+            </div>
+        </section>
+
+        <!----------------------------------------------------------------------------------------------------------------------------------->
+        <!--------------- Features -------------------------------->
+        <div id="features" class="py-5">
+            <div class="container">
+
+                <div class="row" g-5 py-5>
+
+                    <div class="col-md-4">
+                        <h5 class="fw-bold">Activity Tracking</h5>
+                        <p class="text-muted">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Harum, deleniti iure. Harum iusto unde ducimus illum!
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5 class="fw-bold">Camera Remote</h5>
+                        <p class="text-muted">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Harum, deleniti iure. Harum iusto unde ducimus illum!
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5 class="fw-bold">Blood Oxygen</h5>
+                        <p class="text-muted">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Harum, deleniti iure. Harum iusto unde ducimus illum!
+                        </p>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <!---------------------------------------------------------------------------------------->
+                                            <!-- Footer-->
+
+        <footer class="container p-3">
+            <p class="text-center small text-muted">Copyright &copy; Gadget 2024</p>
+        </footer>
+
+
+        <!-- copiamos el js de boostrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+                    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+                    crossorigin="anonymous">
+        </script>
+        </body>
+        </html>
